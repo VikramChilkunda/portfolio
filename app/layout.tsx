@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import "tw-elements/dist/css/tw-elements.min.css";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <script
+          type="text/javascript"
+          src="@node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+        </body>
     </html>
   )
 }
