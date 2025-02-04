@@ -7,8 +7,8 @@ export default function Home() {
 		<>
 			{/* <Navbar /> */}
 			<main className='bg-gradient-to-r from-fuchsia-500 to-cyan-500 pl-5 h-screen flex flex-col items-center'>
-				<div className='flex items-center justify-center h-fit my-auto'>
-					<div className="max-w-xl font-bold text-8xl text-black h-fit uppercase flex flex-col justify-center mr-16">
+				<div className='flex flex-col lg:flex-row items-center justify-center h-fit my-auto'>
+					<div className="max-w-xl mb-10 lg:mb-0 font-bold text-8xl text-black h-fit uppercase flex flex-col justify-center mr-16">
 						<span className='relative left-0 animate-slideFromLeft'>
 							Vikram
 						</span>
@@ -17,8 +17,8 @@ export default function Home() {
 						</span>
 						<p className='text-5xl overflow-hidden whitespace-nowrap ml-2 inline-block max-w-fit tracking-tight animate-typing'>full stack developer</p>
 					</div>
-					<div className='bg-black w-2 mr-5 h-full animate-grow'></div>
-					<div className='flex flex-col items-start font-bold text-5xl capitalize text-black tracking-tight animate-fadeIn ml-2'>
+					<div className='bg-black lg:w-2 mr-5 lg:h-full animate-grow'></div>
+					<div className='flex flex-col w-full items-start font-bold text-5xl capitalize text-black tracking-tight animate-fadeIn ml-2'>
 						<a href="https://github.com/VikramChilkunda/" target='_blank'>
 							<div className='flex items-center mb-2'>
 								<img src="github.png" alt="" className='w-20 h-20 inline mr-5'/>

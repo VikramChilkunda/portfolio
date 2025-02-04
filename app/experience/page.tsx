@@ -39,7 +39,7 @@ export default function Page() {
                 <span className="text-sm bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Wordpress</span>
                 <span className="text-sm bg-red-100 text-red-800 px-2 py-1 rounded">HTML</span>
               </div>
-              {/* <a href="#" className="mt-4 block text-blue-500 hover:underline">Learn More</a> */}
+              <a href="https://www.ee.ucla.edu" target='_blank' className="mt-4 block text-blue-500 hover:underline">Learn More</a>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ export default function Page() {
                 <span className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">.NET</span>
                 <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">C#</span>
               </div>
-              <a href="https://github.com/VikramChilkunda/mentorful" className="mt-4 block text-blue-500 hover:underline">Learn More</a>
+              <a href="https://github.com/VikramChilkunda/mentorful" target='_blank' className="mt-4 block text-blue-500 hover:underline">Learn More</a>
             </div>
           </div>
 
@@ -87,7 +87,7 @@ export default function Page() {
                 <span className="text-sm bg-yellow-100 text-yellow-800 px-2 py-1 rounded">TinyGraphics</span>
                 <span className="text-sm bg-red-100 text-red-800 px-2 py-1 rounded">JavaScript</span>
               </div>
-              <a href="https://github.com/adroyalz/goodminton" className="mt-4 block text-blue-500 hover:underline">Learn More</a>
+              <a href="https://github.com/adroyalz/goodminton" target='_blank' className="mt-4 block text-blue-500 hover:underline">Learn More</a>
             </div>
           </div>
 
@@ -103,7 +103,7 @@ export default function Page() {
                 <span className="text-sm bg-purple-100 text-purple-800 px-2 py-1 rounded">React</span>
                 <span className="text-sm bg-orange-100 text-orange-800 px-2 py-1 rounded">NodeJS</span>
               </div>
-              <a href="https://github.com/daduuu/sudokle" className="mt-4 block text-blue-500 hover:underline">Learn More</a>
+              <a href="https://github.com/daduuu/sudokle" target='_blank' className="mt-4 block text-blue-500 hover:underline">Learn More</a>
             </div>
           </div>
         </div>
