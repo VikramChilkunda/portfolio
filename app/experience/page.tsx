@@ -1,9 +1,11 @@
 import Image from 'next/image';
-import Navbar from '../../components/Navbar';
+import dynamic from "next/dynamic";
+
+const Navbar = dynamic(() => import("../../components/Navbar"), { ssr: false });
 
 export default function Page() {
   return (
-    <body className="bg-gradient-to-r from-purple-500 to-blue-500 min-h-screen">
+    <>
       {/* Navbar */}
       <Navbar />
       <div className="bg-gradient-to-r from-purple-500 to-blue-500 min-h-screen flex flex-col">
@@ -123,7 +125,7 @@ export default function Page() {
         </footer>
       </div>
 
-    </body>
+    </>
   );
 }
 

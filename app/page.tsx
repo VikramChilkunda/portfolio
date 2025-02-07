@@ -1,8 +1,16 @@
-import Navbar from '@/components/Navbar'
+"use client"
+// import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
+	const [mounted, setMounted] = useState(false);
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	if(!mounted) return null;
 	return (
 		<>
 			{/* <Navbar /> */}
