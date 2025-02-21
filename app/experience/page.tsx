@@ -31,8 +31,8 @@ export default function Page() {
 	}
 	const ProjectCard = ({ title, number, description, tags, imageURL, link = "" }) => {
 		return (
-			<div className="bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col gap-2 overflow-hidden border-4 border-[#C1F75D]">
-				<img src={imageURL} alt={`Project ${number}`} className="object-cover w-full max-h-44" />
+			<div className="bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col gap-2 overflow-hidden">
+				<img src={imageURL} alt={`Project ${number}`} className="object-cover w-full h-44" />
 				<div className="flex-1 p-6">
 					<h2 className="text-xl font-bold">{title}</h2>
 					<p className="mt-2 text-gray-600">{description}</p>
