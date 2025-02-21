@@ -29,6 +29,25 @@ export default function Page() {
 			</div>
 		);
 	}
+	const ProjectCard = ({ title, number, description, tags, imageURL, link = "" }) => {
+		return (
+			<div className="bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col gap-2 overflow-hidden border-4 border-[#C1F75D]">
+				<img src={imageURL} alt={`Project ${number}`} className="object-cover w-full max-h-44" />
+				<div className="flex-1 p-6">
+					<h2 className="text-xl font-bold">{title}</h2>
+					<p className="mt-2 text-gray-600">{description}</p>
+					<div className="mt-4 flex flex-wrap gap-2">
+						{tags.map((value, index) => {
+							return( <span key={index} className="text-sm bg-purple-100 text-purple-800 px-2 py-1 rounded">{value}</span>);
+						})}
+					</div>
+				</div>
+				<div >
+					{link && <a href={link} target='_blank' className="ml-6 mb-4 block text-blue-500 hover:underline">Learn More</a>}
+				</div>
+			</div>
+		)
+	}
 	return (
 		<>
 			<Navbar />
@@ -60,22 +79,3 @@ export default function Page() {
 	);
 }
 
-export const ProjectCard = ({ title, number, description, tags, imageURL, link = "" }) => {
-	return (
-		<div className="bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col gap-2 overflow-hidden">
-			<img src={imageURL} alt={`Project ${number}`} className="object-cover w-full max-h-44" />
-			<div className="flex-1 p-6">
-				<h2 className="text-xl font-bold">{title}</h2>
-				<p className="mt-2 text-gray-600">{description}</p>
-				<div className="mt-4 flex flex-wrap gap-2">
-					{tags.map((value, index) => {
-						return( <span key={index} className="text-sm bg-purple-100 text-purple-800 px-2 py-1 rounded">{value}</span>);
-					})}
-				</div>
-			</div>
-			<div >
-				{link && <a href={link} target='_blank' className="ml-6 mb-4 block text-blue-500 hover:underline">Learn More</a>}
-			</div>
-		</div>
-	)
-}
