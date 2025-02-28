@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import dynamic from "next/dynamic";
-
-const Navbar = dynamic(() => import("../../components/Navbar"), { ssr: false });
+import Navbar from '../../components/Navbar';
+// const Navbar = dynamic(() => import("../../components/Navbar"), { ssr: false });
 
 export default function Page() {
 	const ProjectList = () => {
