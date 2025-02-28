@@ -15,35 +15,35 @@ export default function Page() {
 		]
 		return (
 			<div className="grid lg:grid-cols-3 gap-4 md:grid-cols-2 grid-cols-1">
-				{projects.map((project, index) => (
+				{ projects.map((project, index) => (
 					<ProjectCard
-						key={index}
-						title={project.title}
-						number={index}
-						description={project.description}
-						tags={project.tags}
-						imageURL={project.imageURL}
-						link={project.link}
+						key={ index }
+						title={ project.title }
+						number={ index }
+						description={ project.description }
+						tags={ project.tags }
+						imageURL={ project.imageURL }
+						link={ project.link }
 					/>
-				))}
+				)) }
 			</div>
 		);
 	}
 	const ProjectCard = ({ title, number, description, tags, imageURL, link = "" }) => {
 		return (
 			<div className="bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col gap-2 overflow-hidden">
-				<img src={imageURL} alt={`Project ${number}`} className="object-cover w-full h-44" />
+				<img src={ imageURL } alt={ `Project ${number}` } className="object-contain" />
 				<div className="flex-1 p-6">
-					<h2 className="text-xl font-bold">{title}</h2>
-					<p className="mt-2 text-gray-600">{description}</p>
+					<h2 className="text-xl font-bold">{ title }</h2>
+					<p className="mt-2 text-gray-600">{ description }</p>
 					<div className="mt-4 flex flex-wrap gap-2">
-						{tags.map((value, index) => {
-							return( <span key={index} className="text-sm bg-purple-100 text-purple-800 px-2 py-1 rounded">{value}</span>);
-						})}
+						{ tags.map((value, index) => {
+							return (<span key={ index } className="text-sm bg-purple-100 text-purple-800 px-2 py-1 rounded">{ value }</span>);
+						}) }
 					</div>
 				</div>
 				<div >
-					{link && <a href={link} target='_blank' className="ml-6 mb-4 block text-blue-500 hover:underline">Learn More</a>}
+					{ link && <a href={ link } target='_blank' className="ml-6 mb-4 block text-blue-500 hover:underline">Learn More</a> }
 				</div>
 			</div>
 		)
@@ -59,7 +59,7 @@ export default function Page() {
 				<div className='max-w-[70%] lg:max-w-[80%] mx-auto mb-20'>
 					<ProjectList />
 				</div>
-				{/* Footer */}
+				{/* Footer */ }
 				<footer id="contact" className="mt-auto bg-white py-6">
 					<div className="container mx-auto text-center">
 						<p className="text-gray-600">Vikram Chilkunda</p>
