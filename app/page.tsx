@@ -35,8 +35,8 @@ export default function Home() {
 		return (
 			<Link href={link} target={newtab ? '_' : ''}>
 				<div className='flex items-center mb-2'>
-					<img src={img} alt="" className='w-14 h-14 md:w-20 md:h-20 inline mr-5' />
-					<p  className='text-4xl md:text-5xl capitalize'>{name}</p>
+					<img src={img} alt="" className='w-14 h-14 xl:w-20 xl:h-20 inline mr-5' />
+					<p  className='text-4xl xl:text-5xl capitalize'>{name}</p>
 				</div>
 			</Link>
 		);
@@ -45,19 +45,19 @@ export default function Home() {
 	return (
 		<>
 			{/* <Navbar /> */}
-			<main className='bg-gradient-to-r from-fuchsia-500 to-cyan-500 pl-5 h-screen flex flex-col items-center'>
-				<div className='flex flex-col md:flex-row items-center justify-center h-fit my-auto  max-w-[80%] mx-auto'>
-					<div className="max-w-full mb-10 md:mb-0 font-bold text-5xl md:text-7xl md:text-left text-center text-black h-fit uppercase 
-					flex flex-col justify-center md:mr-16">
-						<span className='flex justify-center md:justify-start relative left-[-1px] animate-slideFromLeft text-6xl md:text-7xl text-center md:text-left'>
+			<main className='bg-gradient-to-r from-fuchsia-500 to-cyan-500 xl:pl-5 h-screen flex flex-col items-center'>
+				<div className='flex flex-col xl:flex-row items-center justify-center h-fit my-auto  max-w-[80%] mx-auto'>
+					<div className="max-w-full mb-10 xl:mb-0 font-bold text-5xl xl:text-7xl xl:text-left text-center text-black h-fit uppercase 
+					flex flex-col justify-center xl:mr-16 items-center md:items-baseline">
+						<span className='flex justify-center xl:justify-start relative left-[-5px] animate-slideFromLeft text-6xl xl:text-7xl text-center xl:text-left'>
 							Vikram
 						</span>
-						<span className='flex justify-center md:justify-start relative left-0 animate-slideFromRight'>
+						<span className='flex justify-center xl:justify-start relative left-0 animate-slideFromRight'>
 							Chilkunda
 						</span>
-						<p className='text-2xl md:text-5xl overflow-hidden whitespace-nowrap md:ml-2 inline-block max-w-fit tracking-tight animate-typing'>full stack developer</p>
+						<p className='text-2xl xl:text-5xl overflow-hidden whitespace-nowrap xl:ml-2 inline-block max-w-fit tracking-tight animate-typing'>full stack developer</p>
 					</div>
-					<div className='bg-black md:w-2 mr-5 md:h-full animate-grow'></div>
+					<div className='bg-black xl:w-2 mr-5 xl:h-full animate-grow'></div>
 					<LinksList />
 				</div>
 			</main>
