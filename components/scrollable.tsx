@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { ProjectCard } from "@/app/experience/page";
+import { ProjectCard } from "@/components/ProjectCard";
 
 const ScrollableContainer = ({ items }) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	console.log("items: ", items)
-	console.log("items[]: ", items[currentIndex] )
+	console.log("items[]: ", items[currentIndex])
 	if (!items || items.length === 0) return null;
 
 	const handlePrev = () => {
@@ -17,7 +17,7 @@ const ScrollableContainer = ({ items }) => {
 	};
 
 	return (
-		<div className="relative w-full max-w-md h-16 border rounded-2xl bg-gray-100 flex items-center justify-center overflow-hidden">
+		<div className="relative w-full max-w-md h-full border rounded-2xl bg-gray-100 flex items-center justify-center overflow-hidden">
 			{items.length > 1 && (
 				<button
 					onClick={handlePrev}
@@ -26,10 +26,8 @@ const ScrollableContainer = ({ items }) => {
 					<ChevronLeft size={20} />
 				</button>
 			)}
-	
-				<ProjectCard number={currentIndex} title={items[currentIndex].title} description={items[currentIndex].description} tags={items[currentIndex].tags} imageURL={items[currentIndex].imageURL} scaleOnHover={false}/>
-			
-
+			<ProjectCard number={currentIndex} title={items[currentIndex].title} description={items[currentIndex].description} tags={items[currentIndex].tags} imageURL={items[currentIndex].imageURL} 
+			scaleOnHover={false} />
 			{items.length > 1 && (
 				<button
 					onClick={handleNext}

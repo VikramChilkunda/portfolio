@@ -12,9 +12,10 @@ export default function Home() {
 
 	const LinksList = () => {
 		const links = [
-			{ name: "GitHub", imageUrl: "github.png", url: "https://github.com/VikramChilkunda" },
-			{ name: "LinkedIn", imageUrl: "linkedin.png", url: "https://www.linkedin.com/in/vikram-chilkunda" },
-			{ name: "Experience", imageUrl: "sandclock.png", url: "/experience", newTab: false },
+			{ name: "GitHub", imageUrl: "githubcolor.png", url: "https://github.com/VikramChilkunda" },
+			{ name: "LinkedIn", imageUrl: "linkedincolor.webp", url: "https://www.linkedin.com/in/vikram-chilkunda" },
+			{ name: "Experience", imageUrl: "experiencecolor.png", url: "/experience", newTab: false },
+			{ name: "Locations", imageUrl: "map.png", url: "/locations", newTab: false },
 			// {name: "Education", imageUrl: "book.png", url: "https://github.com/VikramChilkunda"},
 		]
 		return (
@@ -36,7 +37,7 @@ export default function Home() {
 			<Link href={link} target={newtab ? '_' : ''}>
 				<div className='flex items-center mb-2'>
 					<img src={img} alt="" className='w-14 h-14 xl:w-20 xl:h-20 inline mr-5' />
-					<p  className='text-4xl xl:text-5xl capitalize'>{name}</p>
+					<p className='text-4xl xl:text-5xl capitalize'>{name}</p>
 				</div>
 			</Link>
 		);

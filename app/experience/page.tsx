@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import dynamic from "next/dynamic";
 import Navbar from '../../components/Navbar';
+import { ProjectCard } from '@/components/ProjectCard';
 // const Navbar = dynamic(() => import("../../components/Navbar"), { ssr: false });
 
 export default function Page() {
@@ -60,24 +61,4 @@ export default function Page() {
 		</>
 	);
 	
-}
-
-export const ProjectCard = ({ title, number, description, tags, imageURL, link = "", scaleOnHover=true}) => {
-	return (
-		<div className={`bg-white rounded-lg shadow-lg transform ${scaleOnHover? 'hover:scale-105' : ''} transition-transform duration-300 flex flex-col gap-2 overflow-hidden`}>
-			<img src={ imageURL } alt={ `Project ${number}` } className="object-contain" />
-			<div className="flex-1 p-6">
-				<h2 className="text-xl font-bold">{ title }</h2>
-				<p className="mt-2 text-gray-600">{ description }</p>
-				<div className="mt-4 flex flex-wrap gap-2">
-					{ tags.map((value, index) => {
-						return (<span key={ index } className="text-sm bg-purple-100 text-purple-800 px-2 py-1 rounded">{ value }</span>);
-					}) }
-				</div>
-			</div>
-			<div >
-				{ link && <a href={ link } target='_blank' className="ml-6 mb-4 block text-blue-500 hover:underline">Learn More</a> }
-			</div>
-		</div>
-	)
 }

@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
                 <div>
                     <a href={`/`} className="text-gray-600 hover:text-gray-800 mx-4">Home</a>
                     <a href={`/experience`} className="text-gray-600 hover:text-gray-800 mx-4">Experience</a>
+                    <a href={`/locations`} className="text-gray-600 hover:text-gray-800 mx-4">Locations</a>
                 </div>
             </div>
         </nav>
