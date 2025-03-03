@@ -5,6 +5,7 @@ import { ProjectCard } from "@/app/experience/page";
 const ScrollableContainer = ({ items }) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	console.log("items: ", items)
+	console.log("items[]: ", items[currentIndex] )
 	if (!items || items.length === 0) return null;
 
 	const handlePrev = () => {
@@ -25,11 +26,9 @@ const ScrollableContainer = ({ items }) => {
 					<ChevronLeft size={20} />
 				</button>
 			)}
-
-			<div className="text-lg font-semibold px-4 text-center w-full">
-				{items[currentIndex]}
-				<ProjectCard number={currentIndex} title={items[currentIndex].title} description={items[currentIndex].description} tags={items[currentIndex].tags} imageURL={items[currentIndex].imageURL}/>
-			</div>
+	
+				<ProjectCard number={currentIndex} title={items[currentIndex].title} description={items[currentIndex].description} tags={items[currentIndex].tags} imageURL={items[currentIndex].imageURL} scaleOnHover={false}/>
+			
 
 			{items.length > 1 && (
 				<button
