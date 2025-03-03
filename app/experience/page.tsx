@@ -33,7 +33,6 @@ export default function Page() {
 	
 	return (
 		<>
-			<Navbar />
 			<div className="bg-gradient-to-r from-purple-500 to-blue-500 min-h-screen flex flex-col">
 				<header className="text-center py-16">
 					<h1 className="text-5xl font-extrabold text-white">My Projects</h1>

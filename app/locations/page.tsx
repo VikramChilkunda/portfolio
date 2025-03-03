@@ -11,7 +11,6 @@ const LazyMap = dynamic(() => import("@/components/map"), {
 export default function Home() {
   return (
     <main>
-      <Navbar />
       <LazyMap />
     </main>
   );

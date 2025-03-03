@@ -1,6 +1,7 @@
 import './globals.css'
 import 'leaflet/dist/leaflet.css';
 import { Inter } from 'next/font/google'
+import LayoutWrapper from './layoutwrapper';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,8 +23,7 @@ export default function RootLayout({
 				<script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
 			</head>
 			<body className={`${inter.className} overscroll-contain`}>
-				{children}
-
+				<LayoutWrapper>{children}</LayoutWrapper>
 				<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
 					integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
 				></script>
