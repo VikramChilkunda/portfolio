@@ -15,7 +15,7 @@ export default function Home() {
 			{ name: "GitHub", imageUrl: "githubcolor.png", url: "https://github.com/VikramChilkunda" },
 			{ name: "LinkedIn", imageUrl: "linkedincolor.webp", url: "https://www.linkedin.com/in/vikram-chilkunda" },
 			{ name: "Experience", imageUrl: "experiencecolor.png", url: "/experience", newTab: false },
-			{ name: "Locations", imageUrl: "map.png", url: "/locations", newTab: false },
+			{ name: "Projects", imageUrl: "map.png", url: "/locations", newTab: false },
 			// {name: "Education", imageUrl: "book.png", url: "https://github.com/VikramChilkunda"},
 		]
 		return (
